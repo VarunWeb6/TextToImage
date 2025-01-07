@@ -9,7 +9,7 @@ export default function Frontend() {
 
   async function query(data) {
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
+      "https://api-inference.huggingface.co/models/ZB-Tech/Text-to-Image",
       {
         headers: {
           Authorization: `Bearer ${token}`,
