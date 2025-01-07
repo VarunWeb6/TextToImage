@@ -35,10 +35,12 @@ export default function Frontend() {
   return (
     <div className='h-screen w-full bg-gradient-to-r from-pink-500 via-yellow-500 to-blue-500 flex justify-center items-center'>
       <div className='flex flex-col justify-center items-center space-y-6'>
+        <h1 className='text-4xl font-semibold'>Enter Your Prompt Here</h1>
         <input
-          className='p-3 text-xl rounded-lg border-4 border-pink-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white text-black shadow-xl w-72'
+          className='p-3 text-xl rounded-lg border-4 border-pink-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 bg-white text-black shadow-xl w-72 font-black'
           type="text"
           value={inputText}
+          placeholder='Enter Your Text'
           onChange={(e) => setInputText(e.target.value)} // Handle input change
         />
         <button
